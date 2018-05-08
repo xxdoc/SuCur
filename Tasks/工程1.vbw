@@ -1,0 +1,6 @@
+frmTaskMain = 132, 132, 1010, 580, , 110, 110, 988, 558, C
+frmTaskOpenFile = 220, 220, 1098, 668, , 66, 66, 933, 507, C
+frmTaskDelay = 132, 132, 999, 573, , 88, 88, 955, 529, C
+frmTaskTime = 0, 0, 0, 0, C, 110, 110, 977, 551, C
+frmTaskAbout = 154, 154, 1021, 595, , 44, 44, 911, 485, C
+SystemMenuCallbackFunctionClass = 154, 154, 1021, 595, Z
