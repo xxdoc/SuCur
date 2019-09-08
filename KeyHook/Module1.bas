@@ -110,10 +110,10 @@ Private Const HC_ACTION = 0
 Private Const WH_KEYBOARD_LL = 13
 Private lngHook As Long
 Public Function LowLevelKeyboardProc(ByVal nCode As Long, ByVal wParam As Long, ByVal lParam As Long) As Long
-Dim blnHook As Boolean
-If InMsg Then
+If InMsg = True Then
 Exit Function
 End If
+Dim blnHook As Boolean
 Dim p As PKBDLLHOOKSTRUCT
 If nCode = HC_ACTION Then
 Select Case wParam
@@ -186,7 +186,10 @@ blnHook = True
 End Select
 End If
 If frmLock.Check4.Value = 1 Then
-If p.vkCode = VK_MENU Then
+If p.vkCode = VK_LMENU Then
+blnHook = True
+End If
+If p.vkCode = VK_RMENU Then
 blnHook = True
 End If
 End If
